@@ -23,9 +23,19 @@ Dans cette V2, on va afficher les informations de l'Almanax du jour dans une fen
 Le but de la V3 est d'envoyer un SMS sur un téléphone avec les informations récoltées dans la V1. 
 Cette version est un premier jet de la version finale de almanax.py qui enverra un SMS tous les jours à l'utilisateur sans avoir besoin d'executer le programme à chaque fois. 
 
-## V4 : Envoi de SMS automatique
+## V3.1 : Envoi de SMS automatique
 
-Dans cette V4, on va envoyer un SMS tous les jours à l'utilisateur sans avoir besoin d'executer le programme à chaque fois. En gros, on automatise la V3.
+Dans cette V3.1, on va envoyer un SMS tous les jours à l'utilisateur sans avoir besoin d'executer le programme à chaque fois. En gros, on automatise la V3.
+
+Pour se faire, on utilisera cron qui permet de lancer un programme à une heure précise.
+
+Voici les commandes à taper dans le terminal pour lancer le programme tous les jours à 9h du matin :
+
+- ~$ export EDITOR=nano (pour utiliser nano comme éditeur de texte)
+- ~$ crontab -e (pour éditer le fichier de cron)
+On tape alors dans le fichier : 
+0 9 * * * python3 /votre_chemin_vers_almanax_V3 
+- ~$ crontab -l (pour vérifier que le fichier a bien été modifié)
 
 ## Erreurs commises dans ce projet et notes diverses
 
