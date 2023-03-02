@@ -33,8 +33,7 @@ Voici les commandes à taper dans le terminal pour lancer le programme tous les 
 
 - ~$ export EDITOR=nano (pour utiliser nano comme éditeur de texte)
 - ~$ crontab -e (pour éditer le fichier de cron)
-On tape alors dans le fichier : 
-0 9 * * * python3 /votre_chemin_vers_almanax_V3 
+- On tape alors dans le fichier : 0 9 * * * python3 /votre_chemin_vers_almanax_V3.py
 - ~$ crontab -l (pour vérifier que le fichier a bien été modifié)
 
 ## Erreurs commises dans ce projet et notes diverses
@@ -50,3 +49,5 @@ On tape alors dans le fichier :
 - C'était la première fois qu'un utilisateur github me proposait de collaborer sur un projet. C'était assez sympa aussi. J'ai donc eu le premier fork d'un de mes projets ainsi que mon premier pull request.
 
 - C'est aussi la première fois que je publie un repo public sur Github. 
+
+- C'était la première fois que j'utilisais cron pour automatiser des executions de programmes. D'ailleurs, sentez-vous libre d'adapter la commande cron à vos propres besoins. Voici le lien d'un site qui va vous faciliter la vie : https://crontab.guru/
