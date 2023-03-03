@@ -27,7 +27,15 @@ Cette version est un premier jet de la version finale de almanax.py qui enverra 
 
 Dans cette V3.1, on va envoyer un SMS tous les jours à l'utilisateur sans avoir besoin d'executer le programme à chaque fois. En gros, on automatise la V3.
 
-Pour se faire, on utilisera cron qui permet de lancer un programme à une heure précise.
+Il vous faudra un compte Twilio et remplir les informations de connexion dans le fichier var.py.
+
+https://www.twilio.com/fr/
+
+On vous recommande aussi d'utiliser un postbin pour tester l'envoi de SMS. Il vous suffit de remplacer la valeur de la variable status_callback par le lien de votre postbin.
+
+https://www.toptal.com/developers/postbin/
+
+On utilisera cron qui permet de lancer un programme à une heure précise.
 
 Voici les commandes à taper dans le terminal pour lancer le programme tous les jours à 9h du matin :
 
@@ -35,6 +43,8 @@ Voici les commandes à taper dans le terminal pour lancer le programme tous les 
 - ~$ crontab -e (pour éditer le fichier de cron)
 - On tape alors dans le fichier : 0 9 * * * python3 /votre_chemin_vers_almanax_V3.py
 - ~$ crontab -l (pour vérifier que le fichier a bien été modifié)
+
+Nb : Vous ne recevrez votre SMS que si votre ordinateur est allumé à l'heure choisie. Si vous le souhaitez, vous pouvez programmer cron pour executer le programme le matin lorsque vous allumez votre ordinateur. 
 
 ## Erreurs commises dans ce projet et notes diverses
 
